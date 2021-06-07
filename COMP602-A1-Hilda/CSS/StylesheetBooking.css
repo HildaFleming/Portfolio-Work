@@ -1,0 +1,263 @@
+body, html{
+  height: 100%; /*sets the height of the body*/
+  margin: 0%; /*sets the margin to equal no margin*/
+  padding: 0%; /*sets the padding to equal no padding*/
+
+}
+
+*{
+  box-sizing: border-box;  /*this will tell the browser to account for padding and
+  border in the values you specify for a elements width and height*/
+}
+
+body {
+  margin: 0; /*sets no margin for the body*/
+  background-color: #D3D3D3; /*sets the background color*/
+}
+
+
+nav {
+  width: 100%; /*sets the nav width to equal the whole width*/
+  background-color: #31708E; /*sets the background color*/
+  overflow: auto; /*adds a scroll bar if content overflows the nav box*/
+  height: 70px;
+}
+
+ul {
+  padding: 0; /*gives zero padding for the nav bar*/
+  margin: 0 0 50px 200px; /*gives 0 for top margin, 0 for right margin 50 for bottom margin and 200 for left margin*/
+  list-style: none; /*takes away the*/
+}
+
+li {  /*styling the items in the list*/
+float: right; /*positions the elements to the right of the nav bar*/
+}
+
+.logo img {
+position: absolute;
+
+margin-left: 10px; /*gives a margin left of 10*/
+width: 70px; /*gives a width */
+height: 70px;  /*gives a height*/
+
+}
+
+nav a {
+  float: right; /*floats the ancor elements to the right*/
+  font-size: 17px; /*sets font size*/
+  color: white; /*sets the elements color*/
+  text-align: center; /*centers the elements*/
+  padding-right: 16px; /*gives a right padding within the box*/
+  padding-top: 30px; /*gives top padding within the box*/
+  padding-bottom: 18px;  /*gives bottom padding within the box*/
+  padding-left: 16px; /*gives left padding within the box*/
+  text-decoration: none;  /*takes away the text decoration*/
+
+}
+nav a:hover { /*adds a hover to the ancor elements in the nav bar*/
+  background-color: #D3D3D3; /*sets the background color to change to when you hover over the ancor elements*/
+  color: black; /*sets the text color*/
+}
+.active1 {
+  background-color: #D3D3D3; /*gives a background color to whichever tab you are active on*/
+    color: black; /*sets the color*/
+}
+
+
+
+.The-DropDown {
+  float: right;  /*sets the element to float right*/
+  overflow: hidden; /*hides the extra content*/
+}
+
+.The-DropDown .DropDown-Icon {
+  font-size: 17px;   /*sets font size*/
+  border: none;   /*sets no border*/
+  outline: none; /*sets no outline*/
+  color: white;  /*sets the text color*/
+  padding-right: 16px; /*gives a right padding within the box*/
+  padding-top: 30px;  /*gives top padding within the box*/
+  padding-bottom: 18px; /*gives bottom padding within the box*/
+  padding-left: 16px; /*gives left padding within the box*/
+/*  padding: 14px 16px;*/
+  background-color: inherit;  /*inherits the background color*/
+  font-family: inherit; /*sets the font family as inherit*/
+  margin: 0; /*gives no margin*/
+}
+
+.nav a:hover, .The-DropDown:hover .DropDown-Icon {
+  background-color: #D3D3D3; /*sets the background colour*/
+  color: black;  /*text color is set to black*/
+
+}
+
+.The-DropDown-items {
+  display: none; /*sets items to display as none*/
+  position: absolute;
+  margin-top: 25px; /*gives top padding within the box*/
+  background-color: #31708E;  /*sets the background colour*/
+  min-width: 160px; /*sets the min width*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*sets a shadow for the box*/
+  z-index: 1;
+}
+
+.The-DropDown-items a {
+  float: none; /*sets the float to none*/
+  color: whitesmoke;  /*sets the color of the text*/
+  padding: 12px 16px; /*sets the top, left, right and bottom padding*/
+  text-decoration: underline; /*sets the text decoration*/
+  display: block; /*sets the items to display as a block*/
+  text-align: left; /*sets the text alignment*/
+}
+
+.The-DropDown-items a:hover {
+  background-color: #ddd; /*sets the background of the hover*/
+}
+
+.The-DropDown:hover .The-DropDown-items {
+  display: block; /*sets the DropDown icons to display as a block (together)*/
+}
+
+#footer {
+  background-color: #31708E; /*sets the background colour of the footer*/
+  color: white; /*sets the text color of the footer to white*/
+  padding: 20px 10px;
+  position: sticky; /*sets the position to fixed so it doesnt move*/
+  width: 100%; /*sets the width to a 100% so it spans accross the whole page*/
+  bottom: 0%; /*sets there to be no margin on the bottom*/
+  margin-top: 50px; /*sets the top of the margin*/
+}
+
+
+  p {
+    text-align: center; /*Aligns the p elements centeral*/
+  }
+
+
+
+/*The form styling*/
+form {
+  margin-left: 350px; /*Sets the left of the form margin to 500px*/
+  margin-right: 500px;/*Sets the right of the form margin to 500px*/
+  margin-top: 100px; /*Sets the top of the form margin to 100px*/
+  margin-bottom: 5px; /*Sets the bottom of the form margin to 100px*/
+
+}
+
+legend {
+  text-align: center; /*Centers the text of the legend*/
+
+}
+
+
+.Inputs {
+margin-bottom: 5px; /*provides a bottom margin */
+width: 100%; /*sets the width */
+padding: 10px; /*sets the padding*/
+}
+
+ .Inputs1 {
+   margin-bottom: 25px; /*provides a bottom margin */
+   width: 100%;
+   padding: 10px;
+ }
+
+label {
+  padding: 15px; /*provides padding for the inside*/
+}
+
+select {
+  align-items: stretch;
+}
+
+
+.BreakfastButtons {
+  align-items:center; /*aligns the buttons central*/
+  margin-bottom: 30px; /*sets margin bottom*/
+
+}
+#EmailMessage {
+  display: none;  /*sets the element to display at none*/
+}
+
+#errorMessage{
+  display: none;  /*sets the element to display at none*/
+}
+
+
+.TimeETA {
+  display: none; /*hides the element*/
+}
+
+.Dates1 {
+  width: 130px; /*sets the width*/
+  margin-left: 18px; /*sets the left margin*/
+  margin-bottom: 10px; /*sets the bottom margin*/
+}
+
+.Dates2 {
+  width: 130px; /*sets the width*/
+}
+
+.SelectOptions1 {
+  width: 100px; /*sets the width*/
+  margin-left: 99px; /*sets the left margin*/
+}
+
+
+.SelectOptions2 {
+  width: 100px; /*sets the width*/
+  margin-left: 50px; /*sets the left margin*/
+}
+
+
+.SelectOptions3 {
+  width: 100px; /*sets the width*/
+  margin-left: 54px; /*sets the left margin*/
+}
+
+
+.SelectOptions4 {
+  width: 100px; /*sets the width*/
+  margin-left: 29px; /*sets the left margin*/
+}
+
+.SelectOptions5 {
+  width: 100px; /*sets the width*/
+  margin-left: 150px; /*sets the left margin*/
+}
+
+.Submit_Reset {
+  padding: 5px; /*sets the padding*/
+  background-color: #31708E; /*sets the background color*/
+  color: whitesmoke; /*sets the text color*/
+
+}
+
+/*
+#ChooseYourRoom {
+  display: none;
+}
+
+#ChooseNumberOfRooms {
+  display: none;
+}
+
+#ChooseNumberOfAdults {
+  display: none;
+}
+
+#ChooseNumberOfChildren {
+  display: none;
+}
+
+#totalPrice {
+  margin: 0;
+}
+*/
+#totalPrice
+{font-size: 150%;} /*sets the font size*/
+
+#errorMessage{
+  display: none;
+}

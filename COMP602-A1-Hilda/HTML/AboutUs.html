@@ -1,0 +1,97 @@
+<!DOCTYPE html> <!--sets the document type-->
+<html lang="en"> <!--sets the language for the document-->
+<!--  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
+<head> <!--holds information about the document-->
+  <meta charset="UTF-8"> <!--holds meta information such as the charset-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Holds meta information such as what the width of the screen should be for different devices-->
+  <title>AboutUs</title> <!--sets the title of the page-->
+
+<!--Connects various stylesheets with the href element to be able to style the AboutUs page-->
+  <link rel="stylesheet" href="../CSS/StylesheetAboutUs.CSS"/>
+</head> <!--Closes the head tag-->
+<body> <!--opens the body tag-->
+
+
+<!--Creates a div tag with a class used to style in the css document. Inserts an image in this div-->
+  <div class="logo"><a href="../Index.html"><img src="../Images/logo2Compressed.png" alt=""></a></div>
+  <nav> <!--Creates a nav element-->
+    <a  href="Bookings.html">Bookings</a><!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown"> <!--creates a div with a class-->
+      <a  href="RoomType.html" class="DropDown-Icon">Rooms</a><br>  <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown-items"> <!--creates a div with a class-->
+        <div class="The-DropDown-items"> <!--creates a div with a class-->
+          <a href="RoomType.html#R1">Studio Apartment</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="RoomType.html#R2">One Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="RoomType.html#R3">Two Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+    <a  class="active" href="#">About Us</a> <!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown"> <!--Creates a hyperlink and a destination <address-->
+      <a  href="ThingsToDo.html" class="DropDown-Icon">Things To Do</a><br> <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown-items"> <!--Creates a class-->
+        <div class="The-DropDown-items"> <!--Creates another class within the first class-->
+          <!--Creates a hyperlinks and a destination addresses with a id tags used as bookmarks which take you to that section of the page-->
+          <a href="ThingsToDo.html#R1">The Zoo</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R2">The Arcade</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R3">The Museum</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R4">The Gardens</a> <!--Creates a hyperlink and a destination <address-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+    <a  href="../Index.html">Home</a> <!--Creates a hyperlink and a destination <address-->
+</nav> <!--Closes the nav elemenent-->
+
+
+
+
+
+
+
+
+<div class="OutsideContainer"> <!--Creates a div with a class-->
+<div style="text-align:center"> <!--Creates a div with <styling-->
+  <h2>Contact Us</h2> <!--creates text with a header format of 2-->
+  <p>Need more information just leave us a message:</p> <!--Creates a paragraph tag with text inside-->
+</div> <!--Closes the div-->
+<div class="row"> <!--Creates a div with a class-->
+  <div class="column"> <!--Creates a div with a class-->
+    <div class="Address"> <!--Creates a div with a class-->
+      <h3>Our location</h3> <!--creates text with a header format of 3-->
+ <address> <!--Creates an address element with text inside and a break after each line-->
+<!--Text with breaks for each line-->
+   Monar Publishing House<br>
+   1004 London Avenue<br>
+   London<br>
+   W33 9NN<br>
+   United Kingdom<br>
+ </address> <!--end of address tag-->
+ <a href="tel:0000234895">Call us at: 000-023-4895 </a> <!--Creates an ancor tag with a href and a destination with some text-->
+ <p>Email us at: hildafleming11@gmail.com<a href="mailto:hildafleming11@gmail.com" style="color: #ddd;"></a></p> <!--paragraph tag with ancor tag and styling-->
+</div> <!--Closes the div tag--><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.315696556593!2d175.2775681153179!3d-37.78264067975801!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d6d18a39c8afb13%3A0xddc772a9c2252d23!2s18%20London%20Street%2C%20Hamilton%20Central%2C%20Hamilton%203204!5e0!3m2!1sen!2snz!4v1600837228062!5m2!1sen!2snz" ></iframe>
+  </div> <!--Closes the div tag-->
+
+<!--name="email"-->
+
+  <div class="column"> <!--Creates a div with a class-->
+    <form action="/action_page.php"> <!--Creates a form tag with a particular action to take when it gets submitted-->
+      <label for="fname">First Name</label><input type="text" id="fname" name="firstname" placeholder="Your name.."> <!--Creates a label tag with a form tag which will be the same as the id tag--> <!--Creates a input element for the specific field and with specific styles -->
+      <label for="lname">Last Name</label><input type="text" id="lname" name="lastname" placeholder="Your last name.."> <!--Creates a label tag with a form tag which will be the same as the id tag--> <!--Creates a input element for the specific field and with specific styles -->
+      <label for="email" >Email:></label><input type="text" id="email" size="25" maxlength="35" placeholder="e.g., joe@example.com" required> <!--Creates a label tag with a form tag which will be the same as the id tag--> <!--Creates a input element for the specific field and with specific styles -->
+      <label for="Telephone">Telephone:</label><input type="text" id="Telephone" name="Telephone"  required> <!--Creates a label tag with a form tag which will be the same as the id tag--> <!--Creates a input element for the specific field and with specific styles -->
+      <label for="subject">Subject</label><textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea> <!--Creates a label tag with a form tag which will be the same as the id tag--> <!--Creates a textarea element for the specific field and with specific styles -->
+      <input type="submit" value="Submit"> <!--creates a input tag with what type the tag is and the value that will be passed-->
+      <input type="reset" value="reset"> <!--creates a input tag with what type the tag is and the value that will be passed-->
+    </form> <!--closes the form tag-->
+  </div> <!--closes the div tag-->
+</div> <!--closes the div tag-->
+</div> <!--closes the div tag-->
+
+<footer id = "footer"> <!--creates a footer tag-->
+  Copyright &copy; 2020 TheHills. All Rights Reserved <!--text within the footer tag-->
+  <a href="#" class="fa fa-facebook" style="background-color:white"></a> <!--creates a link tag with a class and a style-->
+  <a href="#" class="fa fa-twitter" style="background-color:white" ></a> <!--creates a link tag with a class and a style-->
+</footer> <!--closes the footer tag-->
+</body> <!--closes the body tag-->
+</html> <!--Closes the document tag-->

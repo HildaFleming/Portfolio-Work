@@ -1,0 +1,173 @@
+<!DOCTYPE html> <!--sets the document type-->
+<html lang="en"> <!--sets the language for the document-->
+<head><!--holds information about the document-->
+  <meta charset="UTF-8"> <!--holds meta information such as the charset-->
+    <!--Holds meta information such as what the width of the screen should be for different devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title> <!--sets the title of the page-->
+
+    <!--<link rel="stylesheet" href="C:\Users\Hilda Fleming\Desktop\Wintec S4\COMP602 Web Development\My Website\CSS\style.css">-->
+
+    <link rel="stylesheet" href="../CSS/stylesheetBooking.CSS"/>
+  <script src="../Javascript/Bookings_Javascript.js"> </script>
+</head> <!--Closes the head tag-->
+  <body> <!--opens the body tag-->
+
+ <!--Creates a div tag with a class used to style in the css document. Inserts an image in this div-->
+    <div class="logo"><a href="../Index.html"><img src="../Images/logo2Compressed.png" alt=""></a></div>
+    <nav> <!--Creates a nav element-->
+          <a  href="Bookings.html">Bookings</a> <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown">
+        <a  href="RoomType.html" class="DropDown-Icon">Rooms</a><br>
+        <!--  <i class="fa fa-caret-down"></i>-->
+        <div class="The-DropDown-items">
+          <div class="The-DropDown-items">
+            <a href="RoomType.html#R1">Studio Apartment</a><!--Creates a hyperlink and a destination <address-->
+            <a href="RoomType.html#R2">One Bedroom Unit</a><!--Creates a hyperlink and a destination <address-->
+            <a href="RoomType.html#R3">Two Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+        </div> <!--Closes the div tag-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+      <a  href="AboutUs.html">About Us</a> <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown"> <!--Creates a hyperlink and a destination <address-->
+        <a  href="ThingsToDo.html" class="DropDown-Icon">Things To Do</a><br> <!--Creates a hyperlink and a destination <address-->
+          <!--<i class="fa fa-caret-down">--> <!--Creates a icon as a ordered list item-->
+
+        <div class="The-DropDown-items"> <!--Creates a class-->
+          <div class="The-DropDown-items"> <!--Creates another class within the first class-->
+            <!--Creates a hyperlinks and a destination addresses with a id tags used as bookmarks which take you to that section of the page-->
+            <a href="ThingsToDo.html#R1">The Zoo</a> <!--Creates a hyperlink and a destination <address-->
+            <a href="ThingsToDo.html#R2">The Arcade</a><!--Creates a hyperlink and a destination <address-->
+            <a href="ThingsToDo.html#R3">The Museum</a> <!--Creates a hyperlink and a destination <address-->
+            <a href="ThingsToDo.html#R4">The Gardens</a> <!--Creates a hyperlink and a destination <address-->
+        </div> <!--Closes the div tag-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+    <a  href="../Index.html">Home</a> <!--Creates a hyperlink and a destination <address-->
+  </nav> <!--Closes the nav elemenent-->
+
+<form autocomplete="on" action="Bookings_Javascript"> <!--Creates a form tag which is also a container and adds autocomplete for when the user has inputed values before-->
+
+<fieldset> <!--This element is used to group related data together in a form-->
+  <legend>Bookings</legend> <!--The legend element is used to define a caption fir the fieldset element-->
+
+
+<!--creates a label tag (deines a label this is used for the users who read the screen
+  (reads the label out loud when the user focuses on it)) with a single line text input field-->
+  <!--Note to self the for element of the label and the id attribute of the input should be the same to be able to bind them together-->
+<label for="fname">First Name:</label> <!--Creates a label tag with a form tag which will be the same as the id tag-->
+<input type="text" name="fname" id="fname" class="Inputs" required><br><!--Name Specifies what it will be saved under--> <!--required attribute is one that
+  has to be filled out before submitting the form-->
+<label for="lname">Last Name:</label> <!--Creates a label tag with a single line text input field-->
+<input type="text" name="lname" id="lname" class="Inputs" ><br>
+<label for="Email" >Email:</label>
+<input type="email" size="25" maxlength="25" name="Email" id="Email" placeholder="e.g., joe@example.com"
+ class="Inputs" required="required" onblur="hideEmailMessage()" onfocus="showEmailMessage()">
+  <br> <span id="EmailMessage">Email must be correct as it will be used to send booking confirmation</span> <br><!-- The input type is used for waht kind of input you want the user to input.
+    The placeholder sepcifies an initial value that is expected. The input type for email is used when a user needs to input an email address. size??? maxlength+ max length of the field. name used to
+  find it in the back end. required means that field needs to be filled in on blur is when an object loses its focus. on focus is when an object gets focus when user clicks it.-->
+<label for="Telephone">Telephone:</label>
+<input type="tel" name="phone" id="Telephone" placeholder="125-65-563" class="Inputs1" required><br><!--Used for fields that should contain a phone number-->
+
+
+<label for="Title">Title:</label>
+        <select name="Room Type" id="Title" class="SelectOptions5"> <!--The select element creates a drop down list and the id will be used as a bookmark to go to that specific part of the page-->
+          <!--The option element defines a option that the user can choose from. The value field specifies a initial value for that input field-->
+            <option  >&nbsp;</option>
+          <option >Mr</option>
+          <option >Ms</option>
+          <option >Mrs</option>
+        </select><br>
+
+
+<label for="RoomType">Room Types:</label>
+        <select name="Room Type" id="RoomType" class="SelectOptions1" oninput="priceUpdate();"> <!--The select element creates a drop down list and the id will be used as a bookmark to go to that specific part of the page-->
+          <!--The option element defines a option that the user can choose from. The value field specifies a initial value for that input field-->
+          <option value="" >&nbsp;</option>
+          <option value="185">Studio Room</option>
+          <option value="177">One Bedroom unit</option>
+          <option value="245">Two Bedroom unit</option>
+        </select><br>
+
+
+
+<label for="NoOfRoomsrequired">No. Rooms required:</label>
+        <select name="NoOfRoomsrequired" id="NoOfRoomsrequired" class="SelectOptions2" oninput="priceUpdate();">
+        <option value="" id="ChooseNumberOfRooms">&nbsp;</option>
+        <option value="1"> 1 </option>
+        <option value="2"> 2 </option>
+        <option value="3"> 3 </option>
+      </select><br>
+
+
+      <label for="NoOfAdults">No. Adult travellers:</label>
+              <select name="NoOfAdults" id="NoOfAdults" class="SelectOptions3" oninput="priceUpdate();">
+                <option value="" id="ChooseNoOfAdults">&nbsp;</option>
+                <option value="1">One Adult</option>
+                <option value="2">Two Adults</option>
+                <option value="3">Three Adults</option>
+              </select><br>
+
+
+
+              <label for="NoOfChildren">No. Children Travellers:</label>
+                      <select name="NoChildrenTravellers" id="NoOfChildren" class="SelectOptions4" oninput="priceUpdate();">
+                        <option value="" id="ChooseNoOfChildren">&nbsp;</option>
+                        <option value="1">One Child</option>
+                        <option value="2">Two Children</option>
+                        <option value="3">Three Children</option>
+                      </select><br>
+
+
+<h3>Breakfast Needed?</h3>
+<div class="BreakfastButtons">
+  <input type="checkbox" oninput="priceUpdate()"
+  id="breakfast">
+  <div class="breakfastCheck"></div>
+</div>
+
+
+
+
+<label for="Arrival" >Arrival Date </label>
+<input  type="date" id="Arrival" name="ArrivalDate" onchange="displayETA();" class="Dates1" oninput="priceUpdate(); displayETA();"><br>
+<label for="Departure">Departure Date </label>
+<input  type="date" id="Departure" name="EndDate" onchange="displayETA();" class="Dates2" oninput="priceUpdate(); displayETA();"><br>
+<span id="errorMessage" onblur="hideMessage()" onfocus="showErrorMessage()">
+Please enter a valid date.</span><br>
+
+
+
+
+
+<label for="Timeest" class="TimeETA" id="ETALabel">Estimated Time Of Arrival</label>
+<input type="time" id="Timeest" name="EstimatedTime" class="TimeETA" value="14:00:00"><br>
+
+
+<div class="totalPrice">
+  <h3 id="yourStayTotal"> Total Rate: </h3>
+  <h2 id="totalPrice">$</h2>
+</div>
+
+<label for="info" >Extra Information:</label><br>
+  <textarea rows="10" cols="60" name="info" id="info" ></textarea><br>  <!--The text area element will define a multiple line input field-->
+  <!--The rows attribute specifies the number of visible lines and the col attribute specifies the visible width of the text area-->
+
+
+  <input type="submit" class="Submit_Reset"/> <!--Creates a label tag with a input type of submit(button) which is
+used for submitting a form to the form handler which is ussually a server page-->
+
+<input type="reset" class="Submit_Reset" oninput="resetInfo()"/><br> <!--Creates a label tag with a reset type of reset(button) which is
+used for resetting a form to its orignal state-->
+
+
+</fieldset> <!--Closes the fieldset element-->
+</form> <!--Closes a form tag-->
+
+
+<footer id="footer">
+  Copyright &copy; 2020 TheHills. All Rights Reserved
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html> <!--sets the document type-->
+<html lang="en"> <!--sets the language for the document-->
+<head> <!--holds information about the document-->
+  <meta charset="UTF-8">  <!--holds meta information such as the charset-->
+    <!--Holds meta information such as what the width of the screen should be for different devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Things To Do</title> <!--sets the title of the page-->
+
+  <!--Connects various stylesheets with the href element to be able to style the Home page-->
+<link rel="stylesheet" href="../CSS/StylesheetThingsToDo.CSS"/>
+</head> <!--Closes the head tag-->
+<body> <!--opens the body tag-->
+
+<!--Creates a div tag with a class used to style in the css document. Inserts an image in this div-->
+  <div class="logo"><a href="../Index.html"><img src="../Images/logo2Compressed.png" alt=""></a></div>
+  <nav> <!--Creates a nav element-->
+        <a  href="Bookings.html">Bookings</a><!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown"> <!--creates a div with a class-->
+      <a  href="RoomType.html" class="DropDown-Icon">Rooms</a><br> <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown-items"> <!--creates a div with a class-->
+        <div class="The-DropDown-items"> <!--creates a div with a class-->
+          <a href="RoomType.html#R1">Studio Apartment</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="RoomType.html#R2">One Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="RoomType.html#R3">Two Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+    <a  href="AboutUs.html">About Us</a> <!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown"> <!--Creates a hyperlink and a destination <address-->
+      <a  href="ThingsToDo.html" class="DropDown-Icon">Things To Do</a><br> <!--Creates a hyperlink and a destination <address-->
+      <div class="The-DropDown-items"> <!--Creates a class-->
+        <div class="The-DropDown-items"> <!--Creates another class within the first class-->
+          <!--Creates a hyperlinks and a destination addresses with a id tags used as bookmarks which take you to that section of the page-->
+          <a href="ThingsToDo.html#R1">The Zoo</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R2">The Arcade</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R3">The Museum</a> <!--Creates a hyperlink and a destination <address-->
+          <a href="ThingsToDo.html#R4">The Gardens</a> <!--Creates a hyperlink and a destination <address-->
+      </div> <!--Closes the div tag-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+  <a  href="../Index.html">Home</a> <!--Creates a hyperlink and a destination <address-->
+  </nav> <!--Closes the nav elemenent-->
+
+
+<h1>Places To Visit</h1> <!--Creates a h1 tag with text-->
+<div class="OuterContainer" id="R1"> <!--Creates a class with a id used as bookmark that will go to a particular section within the page-->
+  <div class="container"> <!--Creates a class tag-->
+<div><img src="../Images/Lama.jpg" width="350" height="250" alt=""></div> <!--Creates a image tag inside of a div tag "@kimmypwilliams"-->
+    <div style="flex-grow: 3;">
+      <h2>The Zoo</h2> <!--Creates a h2 tag with text-->
+        <!--Creates a p tag with text inside-->
+      <p>Go and visit the zoo. They have a variety of animals <!--creates a p tag-->
+        which can be fed and interacted with and would love to see you.<br>
+      To go to the zoo page<button class="zoo">Click Me</button><a href="https://www.aucklandzoo.co.nz/"></a> <!--Creates a button tag with a link inside-->
+    </p> <!--closes the p tag-->
+      </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+
+
+<div class="OuterContainer" id="R2"> <!--Creates a class with a id used as bookmark that will go to a particular section within the page-->
+  <div class="container"> <!--Creates a class tag-->
+<div><img src="../Images/ArcadeBasketball.jpg" width="350" height="250" alt=""></div> <!--Creates a image tag inside of a div tag source "@carltraw"-->
+    <div style="flex-grow: 3;">
+      <h2>The Arcade</h2> <!--Creates a h2 tag with text-->
+        <!--Creates a p tag with text inside-->
+        <p>Go and play a round of fun games at the arcade around the corner <br> <!--creates a p tag-->
+          You deserve some fun. To go to Arcade website<button class="zoo">Click Me</button><a href="https://www.timezonegames.com/en-nz/locations/timezone-victoria-st"></a>  <!--Creates a button tag with a link inside-->
+      </p> <!--closes the p tag-->
+      </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+
+
+
+
+<div class="OuterContainer" id="R3"> <!--Creates a class with a id used as bookmark that will go to a particular section within the page-->
+  <div class="container"> <!--Creates a class tag-->
+    <div><img src="../Images/Museum.jpg" width="350" height="250" alt=""></div> <!--Creates a image tag inside of a div tag source "@artmatters"-->
+      <div style="flex-grow: 3;">
+      <h2>The Museum</h2>  <!--Creates a h2 tag with text-->
+        <!--Creates a p tag with text inside-->
+        <p>If you feel like revisiting history <br> <!--creates a p tag-->
+          Check out our Museum. To go to Museum website<button class="zoo">Click Me</button><a href="https://www.museumswellington.org.nz/wellington-museum/"></a>  <!--Creates a button tag with a link inside -->
+      </p> <!--closes the p tag-->
+      </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+
+
+<div class="OuterContainerLast" id="R4"> <!--Creates a class with a id used as bookmark that will go to a particular section within the page-->
+  <div class="container"> <!--Creates a class tag-->
+    <div><img src="../Images/Gardens.jpg" width="350" height="250" alt=""></div> <!--Creates a image tag inside of a div tag source "@tobiasnegele"-->
+    <div style="flex-grow: 3;">
+      <h2>The Gardens</h2> <!--Creates a h2 tag with text-->
+        <!--Creates a p tag with text inside-->
+        <p>Feeling like a break from the indoors <br>  <!--creates a p tag-->
+          Go and enjoy a day at the Gardens. To go to Gardens website<button class="zoo">Click Me</button><a href="https://www.museumswellington.org.nz/wellington-museum/"></a>  <!--Creates a button tag with a link inside-->
+      </p>  <!--closes the p tag-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+
+
+<footer id="footer"> <!--Opens a footer tag-->
+Copyright &copy; 2020 TheHills. All Rights Reserved <!--inserts text in the footer-->
+</footer> <!--CLoses the footer tag-->
+</body> <!--closes the body tag-->
+</html> <!--CLoses the document tag-->

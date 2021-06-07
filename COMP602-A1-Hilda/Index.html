@@ -1,0 +1,94 @@
+<!DOCTYPE html> <!--sets the document type-->
+<html lang="en"> <!--sets the language for the document-->
+<head> <!--holds information about the document-->
+  <meta charset="UTF-8"> <!--holds meta information such as the charset-->
+  <!--Holds meta information such as what the width of the screen should be for different devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>  <!--sets the title of the page-->
+
+<!--Connects various stylesheets with the href element to be able to style the Home page-->
+<link rel="stylesheet" href="./CSS/stylesheetIndex.CSS" />
+<!--<script type="text/javascript" src="Javascript\JavascriptIndex.js"></script>-->
+</head> <!--Closes the head tag-->
+<body> <!--opens the body tag-->
+
+
+<!--Creates a div tag with a class used to style in the css document. Inserts an image in this div-->
+<div class="logo"><a href="Index.html"><img src="./Images/logo2Compressed.png" alt=""></a></div>
+<nav> <!--Creates a nav element-->
+      <a  href="HTML/Bookings.html">Bookings</a> <!--Creates a hyperlink and a destination <address-->
+  <div class="The-DropDown"> <!--creates a div with a class-->
+    <a  href="HTML/RoomType.html" class="DropDown-Icon">Rooms</a><br>  <!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown-items"> <!--creates a div with a class-->
+      <div class="The-DropDown-items"> <!--creates a div with a class-->
+        <a href="HTML/RoomType.html#R1">Studio Apartment</a> <!--Creates a hyperlink and a destination <address-->
+        <a href="HTML/RoomType.html#R2">One Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+        <a href="HTML/RoomType.html#R3">Two Bedroom Unit</a> <!--Creates a hyperlink and a destination <address-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+<a  class="active" href="./HTML/AboutUs.html">About Us</a> <!--Creates a hyperlink and a destination <address-->
+  <div class="The-DropDown"> <!--Creates a hyperlink and a destination <address-->
+    <a  href="./HTML/ThingsToDo.html" class="DropDown-Icon">Things To Do</a><br> <!--Creates a hyperlink and a destination <address-->
+    <div class="The-DropDown-items"> <!--Creates a class-->
+      <div class="The-DropDown-items"> <!--Creates another class within the first class-->
+        <!--Creates a hyperlinks and a destination addresses with a id tags used as bookmarks which take you to that section of the page-->
+        <a href="./HTML/ThingsToDo.html#R1">The Zoo</a> <!--Creates a hyperlink and a destination <address-->
+        <a href="./HTML/ThingsToDo.html#R2">The Arcade</a> <!--Creates a hyperlink and a destination <address-->
+        <a href="./HTML/ThingsToDo.html#R3">The Museum</a> <!--Creates a hyperlink and a destination <address-->
+        <a href="./HTML/ThingsToDo.html#R4">The Gardens</a> <!--Creates a hyperlink and a destination <address-->
+    </div> <!--Closes the div tag-->
+  </div> <!--Closes the div tag-->
+</div> <!--Closes the div tag-->
+  <a  href="#">Home</a> <!--Creates a hyperlink and a destination <address-->
+</nav> <!--Closes the nav elemenent-->
+
+
+ <!--creates a div with a class-->
+ <div class="slideshow">
+   <img src="./Images/pools.jpg" alt="Slide 4" /> <!--Creates a img tag with a image in it source "@ahungryblonde_"-->
+   <img src="./Images/pool4.jpg" alt="Slide 3" /> <!--Creates a img tag with a image in it source "@theanamcxr"-->
+
+   <img src="./Images/pateo.jpg" alt="Slide 2" /><!--Creates a img tag with a image in it "@rpnickson"-->
+
+   <img src="./Images/Loby2.jpg" alt="Slide 1" /><!--Creates a img tag with a image in it source "@ripato"-->
+ </div>
+
+<div class="OuterContainer"> <!--Creates a div with a class-->
+  <div class="container" > <!--Creates a div with a class inside a div with a class-->
+    <div><img src="./Images/pools.jpg" width="500" height="500" alt=""></div> <!--Creates a image tag inside of a div tag source "@ahungryblonde_"-->
+    <div style="flex-grow: 3;">
+      <h2>About Us</h2> <!--Creates a h2 tag with text-->
+      <!--Creates a p tag with text inside-->
+      <p>The Hills Hotel is a luxurious space that has been enteraining families for 31 years.
+      First Established in 1981 we opened our doors to deliver the best service to our cliente and still
+      strive to do this on a day to day basis.
+    </p> <!--Closes the p tag-->
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+       Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+         </div> <!--Closes the above div tag-->
+  </div> <!--closes the second div tag-->
+</div> <!--Closes the first div tag-->
+
+
+<div class="OuterContainerLast"> <!--Creates a div with a class-->
+  <div class="container"> <!--Creates a div with a class inside a div with a class-->
+    <div style="flex-grow: 3;">
+      <h2>How to reach The Hills Hotel</h2> <!--Creates a h2 tag with text-->
+      <!--Creates a p tag with text inside-->
+      <p>We are located in New Zealand. To locate us go to our about us where you will find more
+      information about our hotel. We are located In the middle section of the Zoo and the airport. </p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+        
+    </div> <!--Closes the above div tag-->
+    <div><img src="./Images/pools.jpg" width="500" height="500" alt=""></div> <!--Creates a image tag inside of a div tag source "@ahungryblonde_"-->
+  </div> <!--closes the second div tag-->
+</div> <!--Closes the first div tag-->
+
+<footer id = "footer"> <!--opens the footer tag-->
+  Copyright &copy; 2020 TheHills. All Rights Reserved <!--text inside the footer tag-->
+</footer> <!--End of the footer section-->
+</body> <!--Closes the body tag-->
+</html> <!--Closes the document tag-->

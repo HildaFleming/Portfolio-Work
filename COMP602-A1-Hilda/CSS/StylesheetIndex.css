@@ -1,0 +1,200 @@
+body, html{
+  height: 100%;  /*sets the height of the body*/
+  margin: 0%; /*sets the margin to equal no margin*/
+  padding: 0%;  /*sets the padding to equal no padding*/
+}
+
+*{
+  box-sizing: border-box; /*this will tell the browser to account for padding and
+  border in the values you specify for a elements width and height*/
+}
+
+body {
+  height: 100%;  /*sets the height of the body*/
+  margin: 0; /*sets no margin for the body*/
+  background-color: #D3D3D3; /*sets the background color*/
+}
+
+
+nav {
+  width: 100%; /*sets the nav width to equal the whole width*/
+  background-color: #31708E; /*sets the background color*/
+  overflow: auto; /*adds a scroll bar if content overflows the nav box*/
+  height: 70px; /*sets the height*/
+}
+
+ul {
+  padding: 0; /*gives zero padding for the nav bar*/
+  margin: 0 0 50px 200px; /*gives 0 for top margin, 0 for right margin 50 for bottom margin and 200 for left margin*/
+  list-style: none; /*takes away the*/
+
+}
+
+
+li {  /*styling the items in the list*/
+float: right; /*positions the elements to the right of the nav bar*/
+}
+
+.logo img {
+position: absolute;
+
+margin-left: 10px; /*gives a margin left of 10*/
+width: 70px; /*gives a width */
+height: 70px;  /*gives a height*/
+
+}
+
+nav a {
+  float: right; /*floats the ancor elements to the right*/
+  font-size: 17px; /*sets font size*/
+  color: white; /*sets the elements color*/
+  text-align: center; /*centers the elements*/
+  padding-right: 16px; /*gives a right padding within the box*/
+  padding-top: 30px; /*gives top padding within the box*/
+  padding-bottom: 18px;  /*gives bottom padding within the box*/
+  padding-left: 16px; /*gives left padding within the box*/
+  text-decoration: none;  /*takes away the text decoration*/
+
+}
+nav a:hover { /*adds a hover to the ancor elements in the nav bar*/
+  background-color: #D3D3D3; /*sets the background color to change to when you hover over the ancor elements*/
+  color: black; /*sets the text color*/
+}
+.active1 {
+  background-color: #D3D3D3; /*gives a background color to whichever tab you are active on*/
+    color: black; /*sets the color*/
+}
+
+
+
+.The-DropDown {
+  float: right; /*sets the element to float right*/
+  overflow: hidden; /*hides the extra content*/
+}
+
+.The-DropDown .DropDown-Icon {
+  font-size: 17px; /*sets font size*/
+  border: none; /*sets no border*/
+  outline: none; /*sets no outline*/
+  color: white; /*sets the text color*/
+  padding-right: 16px; /*gives a right padding within the box*/
+  padding-top: 30px; /*gives top padding within the box*/
+  padding-bottom: 18px;  /*gives bottom padding within the box*/
+  padding-left: 16px;  /*gives left padding within the box*/
+  background-color: inherit; /*inherits the background color*/
+  font-family: inherit; /*sets the font family as inherit*/
+  margin: 0; /*gives no margin*/
+}
+
+.nav a:hover, .The-DropDown:hover .DropDown-Icon {
+  background-color: #D3D3D3; /*sets the background colour*/
+  color: black; /*text color is set to black*/
+
+}
+
+.The-DropDown-items {
+  display: none;  /*sets items to display as none*/
+  position: absolute;
+  margin-top: 25px; /*gives top padding within the box*/
+  background-color: #31708E;  /*sets the background colour*/
+  min-width: 160px; /*sets the min width*/
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*sets a shadow for the box*/
+  z-index: 1;
+}
+
+.The-DropDown-items a {
+  float: none; /*sets the float to none*/
+  color: whitesmoke;  /*sets the color of the text*/
+  padding: 12px 16px; /*sets the top, left, right and bottom padding*/
+  text-decoration: underline; /*sets the text decoration*/
+  display: block; /*sets the items to display as a block*/
+  text-align: left; /*sets the text alignment*/
+}
+
+.The-DropDown-items a:hover {
+  background-color: #ddd;  /*sets the background of the hover*/
+}
+
+.The-DropDown:hover .The-DropDown-items {
+  display: block;  /*sets the DropDown icons to display as a block (together)*/
+}
+
+
+
+.OuterContainer { /*the container that holds another container*/
+  background-color: #8FC1E3; /*sets the background color*/
+  margin-top: 100px; /*sets the top margin*/
+  padding: 0px; /*dont give padding*/
+  margin-left: 100px; /*sets the left margin*/
+  margin-right: 100px; /*sets the left margin*/
+
+}
+
+
+.container {
+  display: flex; /*displays the container as flex making the container flexible*/
+  flex-direction: row; /*stacks the container elements in a row*/
+  flex-wrap: wrap; /*specifies it to wrap if the browser window becomes smaller*/
+  justify-content: center; /*This will align the flex items in the center of the container*/
+  align-items: center; /*will align the items in the middle of the container*/
+padding: 0px; /*sets the padding*/
+}
+
+.container > div {
+  background-color: whitesmoke; /*sets the background color*/
+  color: black; /*sets the text color*/
+  width: 500px; /*sets the width of the container*/
+  height: 500px; /*sets the height of the container*/
+  margin-top: 50px; /*sets the margin top of the container*/
+  margin-left: 30px; /*sets the margin left of the container*/
+  margin-right: 30px; /*sets the margin right of the container*/
+  margin-bottom: 50px; /*sets the margin bottom of the container*/
+  text-align: center; /*sets the text to align to the middle*/
+  line-height: 30px; /*sets the line height of the text*/
+  font-size: 20px; /*sets the font size of the text*/
+  padding: 0px; /*doesnt give padding to the text*/
+  color: black; /*sets the text color to black*/
+}
+
+
+.OuterContainerLast {
+  background-color: #8FC1E3; /*sets the background color*/
+  margin-top: 100px; /*sets the margin top of the container*/
+  padding: 0px; /*doesnt give padding to the outer container of the last section*/
+  margin-left: 100px; /*sets the margin left of the container*/
+  margin-right: 100px; /*sets the margin right of the container*/
+  margin-bottom: 50px; /*sets the margin bottom of the container*/
+}
+
+#footer {
+  background-color: #31708E; /*sets the background colour of the footer*/
+  color: white; /*sets the text color of the footer to white*/
+  padding: 20px 10px;
+  position: sticky; /*sets the position to fixed so it doesnt move*/
+  width: 100%; /*sets the width to a 100% so it spans accross the whole page*/
+  bottom: 0%; /*sets there to be no margin on the bottom*/
+  margin-top: auto; /*sets the top of the margin*/
+}
+
+
+h1 {
+  text-align: center; /*centers the text*/
+  text-decoration: underline; /*underlines the text*/
+  font-size: 60px; /*sets the font size of the h1 element to 60px*/
+
+}
+
+h2 {
+  text-decoration: underline; /*underlines the text*/
+  padding-top: 20px; /*adds padding to the top of the h2 element*/
+  padding-bottom: 85px; /*adds padding to the bottom of the h2 element*/
+}
+
+.slideshow {width:100%; height:750px; overflow:hidden; position:relative; }
+.slideshow img{ position:absolute; animation:fling-minislide 20s infinite; opacity:0; width: 100%; height: auto;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.slideshow img:nth-child(4){animation-delay:0s;}
+.slideshow img:nth-child(3){animation-delay:5s;}
+.slideshow img:nth-child(2){animation-delay:10s;}
+.slideshow img:nth-child(1){animation-delay:15s;}
